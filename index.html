@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Terjun Batu Putu - Kelompok 10</title>
+
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <!-- Bagian navigasi di atas yang tetap mengikut saat digulir -->
+    <nav class="navbar">
+        <button id="themeToggle" class="toggle-btn">🌙</button>
+        <ul>
+            <!-- Menu menuju bagian tertentu di halaman -->
+            <li><a href="#lokasi">Lokasi</a></li>
+            <li><a href="#maps">Maps</a></li>
+            <li><a href="#edukasi">Edukasi</a></li>
+            <li><a href="#tabel">Data</a></li>
+            <li><a href="#hhbk">HHBK</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- ================= HERO / HEADER ================= -->
+    <!-- Bagian paling atas berupa banner besar background gambar -->
+    <header class="hero fade">
+        <div class="hero-overlay"></div>
+
+        <!-- Judul utama website -->
+        <h1>
+            Desain dan Pemetaan Kawasan Air Terjun dengan Berbasis Sistem IoT untuk Optimalisasi Pengelolaan dan Wisata
+        </h1>
+
+        <!-- Tombol untuk menggulir ke bagian lokasi -->
+        <a href="#lokasi" class="btn-jelajah">JELAJAHI ⟶</a>
+    </header>
+
+    <!-- ================= LOKASI ================= -->
+    <!-- Kontainer putih yang berisi informasi tentang lokasi -->
+    <section id="lokasi" class="content fade">
+        <h2>Air Terjun Batu Putu</h2>
+
+        <!-- Gambar utama bagian lokasi -->
+        <img src="asset/airterjun.jpeg" class="img-main hover">
+
+        <!-- Teks deskripsi -->
+        <p>
+        <h3>LOKASI</h3>
+        Air Terjun Batu Putu terletak di Desa Batu Putu, Kecamatan Teluk Betung Utara, Kota Bandar Lampung, Lampung.
+        Area wisata ini memiliki luas sekitar 15 hektare dan menawarkan pemandangan alam yang mempesona, termasuk
+        kolam pemandian dan sungai di bawah air terjun. Aksesnya mudah dicapai dari pusat kota dengan waktu tempuh
+        sekitar 15-45 menit, tergantung titik keberangkatan. Pengelolaannya berada di bawah Pemkot Bandar Lampung
+        dan tidak ada biaya masuk, sehingga menjadi destinasi alam yang terjangkau dan menyegarkan bagi wisatawan.
+        </p>
+    </section>
+
+    <!-- ================= MAPS ================= -->
+    <!-- Bagian embed Google Maps -->
+    <section id="maps" class="content fade">
+        <h2>Google Maps</h2>
+
+        <!-- Peta lokasi -->
+        <iframe width="100%" height="400" style="border-radius:12px;border:none"
+            src="https://www.google.com/maps?q=Air+Terjun+Batu+Putu&output=embed"></iframe>
+    </section>
+
+
+    <!-- ================= EDUKASI ================= -->
+    <section id="edukasi" class="content fade">
+        <h2>EDUKASI</h2>
+        <br>
+        <p>
+            Berdasarkan standar Baku Mutu Air (Peraturan Pemerintah Indonesia / KLHK), kualitas air yang baik untuk
+            aktivitas manusia di air terjun. Terdapat beberapa parameter yaitu:
+        </p>
+        <b>1. Kekeruhan:</b> secara fisik, air harus jernih dengan tingkat kekeruhan (TSS) ≤ 50 mg/L atau semkain keruh
+        semakin tidak baik, serta tidak berbau.
+        <br>
+        <b>2. pH:</b> Berdasarkan PP No. 82 Tahun 2001 kualitas air kelas I sampai IV ditetapkan nilai pH minimum 6 dan
+        nilai maksimum 9 dengan peruntukan air minum, pertanian, peternakan dan budidaya ikan air tawar. Yang artinya
+        rentang ini adalah standar umum kualitas air bersih untuk kontak manusia pada kegiatan di air terjun misalnya
+        berenang, bermain air, kegiatan wisata air terjun atau penggunaan non-minum.
+        <br>
+        <b>3. Kadar BOD:</b> air harus memiliki kadar BOD ≤ 3 mg/L dan COD ≤ 25 mg/L, menunjukkan rendahnya pencemaran
+        organik.
+        <br>
+        <b>4. Kandungan DO (oksigen terlarut):</b> minimal 4 mg/L, menandakan ekosistem air yang masih sehat. Zat-zat
+        lain seperti amonia ≤ 0.5 mg/L, nitrat ≤ 10 mg/L, dan fosfat ≤ 0.2 mg/L juga harus berada dalam batas aman agar
+        tidak memicu gangguan kesehatan atau eutrofikasi.
+        </p>
+        <img src="asset/airterjun2.webp" class="img-main hover">
+        <p>
+            Suhu dan kelembaban juga merupakan parameter yang perlu diperhatikan ketika akan mengunjungi air terjun.
+            Suhu yang ideal untuk kegiatan di air terjun adalah suhu yang nyaman di mana tidak merasa kepanasan atau
+            kedinginan, umumnya sekitar 25∘C hingga 30∘C, dengan kelembaban yang tidak terlalu tinggi yaitu sekitar 50 -
+            70%. Kelembaban sedang dan suhu yang hangat atau sejuk (tidak ekstrem) akan membuat kegiatan menjadi lebih
+            menyenangkan dan tidak mengganggu kenyamanan saat menikmati alam.
+        </p>
+
+
+    </section>
+    <!-- ================= TABEL 3×7 ================= -->
+    <section id="tabel" class="content fade">
+        <h2>INTEGRASI DATA KONDISI AIR TERJUN DAN DATA BMKG</h2>
+        <h3>1. DATA KONDISI AIR TERJUN</h3>
+        <p>Berikut merupakan data kondisi air terjun batu putu, berdasarkan sistem Iot:</p>
+        <div class="table-wrap">
+            <div class="scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Rentang</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Kekeruhan</td>
+                            <td>≤ 50 mg/L</td>
+                            <td>Kekeruhan bergantung dengan cuaca, ketika musim hujan akan keruh</td>
+                        </tr>
+
+                        <tr>
+                            <td>pH</td>
+                            <td>7,2</td>
+                            <td>Termasuk pada nilai pH normal untuk melakukan kegiatan di Air terjun</td>
+                        </tr>
+
+                        <tr>
+                            <td>Suhu</td>
+                            <td>23°C – 29°C</td>
+                            <td>Termasuk kedalam suhu ideal, dimana tidak kepanasan dan kedinginan</td>
+                        </tr>
+
+                        <tr>
+                            <td>Kelembaban</td>
+                            <td>65 – 70%</td>
+                            <td>Termasuk dalam kelembaban sedang dan akan membuat kegiatan menjadi lebih menyenangkan
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Kadar BOD dan COD</td>
+                            <td>≤ 3 mg/L dan ≤ 25 mg/L</td>
+                            <td>Rendahnya pencemaran organik</td>
+                        </tr>
+
+                        <tr>
+                            <td>Kandungan DO</td>
+                            <td>4 mg/L</td>
+                            <td>Ekosistem air sehat</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <h3>2. BMKG</h3>
+        <p>Kondisi dan cuaca di Air Terjun akan selalu berubah sesuai dengan musim, jadi untuk mengetahui kondisi dan
+            peringatan dini cuaca secara akurat, dapat diakses secara realtime melalui web BMKG:</p>
+        <div class="bmkg-card">
+            <div class="bmkg-header">
+                <img src="asset/BMKG.jpg" class="bmkg-logo">
+                <h3>BMKG Lampung – Cuaca Realtime</h3>
+            </div>
+
+            <!-- ICON CUACA ANIMASI -->
+            <div class="weather-icon">
+                <svg width="90" height="90" viewBox="0 0 64 64" class="sun-cloud">
+                    <g class="sun">
+                        <circle cx="32" cy="32" r="12" fill="#FFD93D" />
+                        <g stroke="#FFD93D" stroke-width="4" stroke-linecap="round">
+                            <line x1="32" y1="6" x2="32" y2="16" />
+                            <line x1="32" y1="48" x2="32" y2="58" />
+                            <line x1="6" y1="32" x2="16" y2="32" />
+                            <line x1="48" y1="32" x2="58" y2="32" />
+                            <line x1="14" y1="14" x2="20" y2="20" />
+                            <line x1="44" y1="44" x2="50" y2="50" />
+                            <line x1="14" y1="50" x2="20" y2="44" />
+                            <line x1="44" y1="20" x2="50" y2="14" />
+                        </g>
+                    </g>
+
+                    <g class="cloud">
+                        <ellipse cx="42" cy="42" rx="16" ry="10" fill="#ffffffdd" />
+                        <circle cx="30" cy="44" r="10" fill="#ffffffdd" />
+                    </g>
+                </svg>
+            </div>
+
+
+
+            <p class="bmkg-desc">
+                Informasi cuaca realtime Air terjun Batu Putu di Sukadana Ham, Kec. Tj. Karang Barat , Kota Bandar
+                Lampung: suhu, kelembapan, angin, dan potensi hujan.
+            </p>
+            <a href="https://lampung.bmkg.go.id/info/cuaca/Sukadana+Ham+Tanjungkarang+Barat+KOTA+BANDAR+LAMPUNG/18.71.03.1006"
+                target="_blank" class="bmkg-btn">
+                Buka Detail BMKG
+            </a>
+
+            <p class="bmkg-footer">Data oleh BMKG Lampung</p>
+        </div>
+    </section>
+
+    <!-- ================= HHBK ================= -->
+    <section id="hhbk" class="content fade">
+        <h2>PENGEMBANGAN POTENSI HHBK</h2>
+        <img src="asset/pala.jpg" class="img-main hover">
+        <p>
+            Hasil Hutan Bukan Kayu (HHBK) merupakan salah satu potensi dari alam yang dapat dimanfaatkan oleh masyarakat
+            sekitar maupun pengunjung. Jenis-jenis HHBK meliputi rotan, getah, damar, bambu, madu, buah-buahan hutan,
+            serta tanaman obat yang dapat dimanfaatkan untuk berbagai kebutuhan hidup sehari-hari. Pada kawasan air
+            terjun batu putu HHBK yang akan kami kembangkan adalah buah pala
+        </p>
+
+        <img src="asset/palamu.jpg" class="img-main hover">
+        <p>
+            Pala merupakan salah satu hasil hutan bukan kayu (HHBK) bernilai ekonomi tinggi yang banyak dimanfaatkan
+            masyarakat sekitar Air Terjun. Melalui proses pengolahan daging buah pala menjadi selai, nilai tambah produk
+            meningkat dan membuka peluang diversifikasi olahan pangan berbasis sumber daya hutan.
+            Nilai gizi yang terkandung dalam setiap 100 g daging buah pala yaitu :
+
+        </p>
+        <ul>
+            <li>Kalori: 42 kal</li>
+            <li>Protein: 0,30 g</li>
+            <li>Lemak: 0,20 g</li>
+            <li>Karbohidrat: 10,90 g</li>
+            <li>Kalsium: 32 mg</li>
+            <li>Fosfor: 24 mg</li>
+            <li>Besi: 1,50 mg</li>
+            <li>Vitamin A: 29,50 IU</li>
+            <li>Vitamin C: 22 mg</li>
+            <li>Air: 88,10 g</li>
+        </ul>
+
+    </section>
+
+    <!-- ================= GALERI ================= -->
+    <section id="galeri" class="content fade">
+        <h2>Galeri</h2>
+
+        <!-- Grid galeri foto -->
+        <div class="gallery-container">
+            <img src="asset/foto1.jpg" class="galeri-img hover">
+            <img src="asset/foto2.jpg" class="galeri-img hover">
+            <img src="asset/palamu.jpg" class="galeri-img hover">
+            <img src="asset/airterjun.jpeg" class="galeri-img hover">
+            <img src="asset/pala.jpg" class="galeri-img hover">
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer fade">
+        <h2>MARI KUNJUNGI WISATA AIR TERJUN BATU PUTU DAN SELALU JAGA LINGKUNGAN SEKITARNYA! SALAM LESTARI</h2>
+        <br><br>
+        <h3>KELOMPOK 10</h3>
+
+        <!-- Nama anggota kelompok -->
+        <p class="nama-kelompok">
+            Nabilla Wilantika P. - 122420002 <br>
+            Cecilia P. Simangunsong - 122420053 <br>
+            Desrina Kristin Sitohang - 122420073 <br>
+            Dwi Cesya Simatupang - 122420099 <br>
+            Vina Destiana R. - 122420109
+        </p>
+
+        <!-- Informasi copyright -->
+        <p class="copyright">
+            &copy; 2025 Kelompok 10. Hak Cipta Dilindungi.
+        </p>
+    </footer>
+
+    <!-- File JavaScript yang mengatur animasi scroll -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
