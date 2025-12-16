@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DATA KONDISI AIR TERJUN </title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+      <nav class="navbar">
+        <div class="logo">🌿 Kelompok 10</div>
+
+        <!-- TOGGLE BUTTON (MOBILE) -->
+        <button class="toggle-btn" aria-label="Toggle menu">
+          ☰
+        </button>
+
+        <!-- MENU -->
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="tim.html">Tim Kami</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="desain.html">Desain Masa Depan</a></li>
+        </ul>
+      </nav>
+    <!-- ================= DATA dan BMKG ================= -->
+    <!-- ================= TABEL 3×7 ================= -->
+    <section class="content">
+        <h2>INTEGRASI DATA KONDISI AIR TERJUN DAN DATA BMKG</h2>
+        <br>
+        <h3>1. DATA KONDISI AIR TERJUN</h3>
+        <p>Berikut merupakan data kondisi air terjun batu putu, berdasarkan sistem Iot:</p>
+        <br>
+        <div class="table-wrap">
+            <div class="scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Rentang</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Kekeruhan</td>
+                            <td>≤ 50 mg/L</td>
+                            <td>Kekeruhan bergantung dengan cuaca, ketika musim hujan akan keruh</td>
+                        </tr>
+
+                        <tr>
+                            <td>pH</td>
+                            <td>7,2</td>
+                            <td>Termasuk pada nilai pH normal untuk melakukan kegiatan di Air terjun</td>
+                        </tr>
+
+                        <tr>
+                            <td>Suhu</td>
+                            <td>23°C – 29°C</td>
+                            <td>Termasuk kedalam suhu ideal, dimana tidak kepanasan dan kedinginan</td>
+                        </tr>
+
+                        <tr>
+                            <td>Kelembaban</td>
+                            <td>65 – 70%</td>
+                            <td>Termasuk dalam kelembaban sedang dan akan membuat kegiatan menjadi lebih menyenangkan
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Kadar BOD dan COD</td>
+                            <td>≤ 3 mg/L dan ≤ 25 mg/L</td>
+                            <td>Rendahnya pencemaran organik</td>
+                        </tr>
+
+                        <tr>
+                            <td>Kandungan DO</td>
+                            <td>4 mg/L</td>
+                            <td>Ekosistem air sehat</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <br>
+        <h3>2. BMKG</h3>
+        <p>Kondisi dan cuaca di Air Terjun akan selalu berubah sesuai dengan musim, jadi untuk mengetahui kondisi dan
+            peringatan dini cuaca secara akurat, dapat diakses secara realtime melalui web BMKG:</p>
+        <div class="bmkg-card">
+            <div class="bmkg-header">
+                <img src="asset/BMKG.jpg" class="bmkg-logo">
+                <h3>BMKG Lampung – Cuaca Realtime</h3>
+            </div>
+
+            <!-- ICON CUACA ANIMASI -->
+            <div class="weather-icon">
+                <svg width="90" height="90" viewBox="0 0 64 64" class="sun-cloud">
+                    <g class="sun">
+                        <circle cx="32" cy="32" r="12" fill="#FFD93D" />
+                        <g stroke="#FFD93D" stroke-width="4" stroke-linecap="round">
+                            <line x1="32" y1="6" x2="32" y2="16" />
+                            <line x1="32" y1="48" x2="32" y2="58" />
+                            <line x1="6" y1="32" x2="16" y2="32" />
+                            <line x1="48" y1="32" x2="58" y2="32" />
+                            <line x1="14" y1="14" x2="20" y2="20" />
+                            <line x1="44" y1="44" x2="50" y2="50" />
+                            <line x1="14" y1="50" x2="20" y2="44" />
+                            <line x1="44" y1="20" x2="50" y2="14" />
+                        </g>
+                    </g>
+
+                    <g class="cloud">
+                        <ellipse cx="42" cy="42" rx="16" ry="10" fill="#ffffffdd" />
+                        <circle cx="30" cy="44" r="10" fill="#ffffffdd" />
+                    </g>
+                </svg>
+            </div>
+
+
+
+            <p class="bmkg-desc">
+                Informasi cuaca realtime Air terjun Batu Putu di Sukadana Ham, Kec. Tj. Karang Barat , Kota Bandar
+                Lampung: suhu, kelembapan, angin, dan potensi hujan.
+            </p>
+            <a href="https://lampung.bmkg.go.id/info/cuaca/Sukadana+Ham+Tanjungkarang+Barat+KOTA+BANDAR+LAMPUNG/18.71.03.1006"
+                target="_blank" class="bmkg-btn">
+                Buka Detail BMKG
+            </a>
+
+            <p class="bmkg-footer">Data oleh BMKG Lampung</p>
+        </div>
+    </section>
+        <!-- ================= FOOTER ================= -->
+        <footer class="footer">
+          <div class="footer-container">
+
+            <div class="footer-brand">
+              <div class="footer-logo">🌿</div>
+              <p>
+                Air Terjun Batu Putu<br />
+                Wisata Alam & Edukasi Berkelanjutan
+              </p>
+            </div>
+
+            <div class="footer-column">
+              <h4>Navigasi</h4>
+              <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tim.html">Tim Kami</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="desain.html">Desain Masa Depan</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Bahan Bacaan</h4>
+              <ul>
+                <li><a href="edukasi.html">Edukasi</a></li>
+                <li><a href="data.html">Data Air Terjun</a></li>
+                <li><a href="https://lampung.bmkg.go.id/info/cuaca/Sukadana+Ham+Tanjungkarang+Barat+KOTA+BANDAR+LAMPUNG/18.71.03.1006">Data BMKG</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Kontak</h4>
+              <p>Kelompok 10</p>
+              <p>Bandar Lampung</p>
+              <p>Indonesia</p>
+            </div>
+
+          </div>
+
+          <div class="footer-bottom">
+            © 2025 Kelompok 10 — Air Terjun Batu Putu
+          </div>
+        </footer>
+
+      </div>
+
+      <!-- ================= JAVASCRIPT ================= -->
+      <script src="script.js"></script>
+
+    </body>
+    </html>
